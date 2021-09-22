@@ -21,7 +21,7 @@ async def on_message(message):
     
     if message.content == f"{prefix}능지표":
         embed = discord.Embed(title='능지표', description='v1.0.0', color = 0xff0000)
-        embed.image(url = "https://cdn.discordapp.com/attachments/890077090383265793/890077103733755914/unknown.png")
+        embed.set_image(url = "https://cdn.discordapp.com/attachments/890077090383265793/890077103733755914/unknown.png")
         await message.channel.send(embed=embed)
 
 client.run(os.environ['token'])
